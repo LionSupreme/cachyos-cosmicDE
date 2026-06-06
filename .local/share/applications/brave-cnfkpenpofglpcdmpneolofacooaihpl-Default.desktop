@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Wootility Web
+MimeType=x-scheme-handler/web+wootwoot;x-scheme-handler/chromium;
+Exec=/opt/brave.com/brave-origin-nightly/brave-origin-nightly --profile-directory=Default --app-id=cnfkpenpofglpcdmpneolofacooaihpl %U
+Icon=brave-cnfkpenpofglpcdmpneolofacooaihpl-Default
+StartupWMClass=crx_cnfkpenpofglpcdmpneolofacooaihpl

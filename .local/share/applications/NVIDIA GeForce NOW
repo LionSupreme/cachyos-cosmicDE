@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+
+# Copyright (c) 2025, NVIDIA CORPORATION.  All rights reserved.
+#
+# NVIDIA CORPORATION and its licensors retain all intellectual property
+# and proprietary rights in and to this software, related documentation
+# and any modifications thereto.  Any use, reproduction, disclosure or
+# distribution of this software and related documentation without an express
+# license agreement from NVIDIA CORPORATION is strictly prohibited.
+
+APP_ID="com.nvidia.geforcenow"
+
+DIR="$HOME/.local/state/NVIDIA/GeForceNOW"
+LOG_FILE="$DIR/gfn-launcher.log"
+
+SELF="$(readlink -f "$0")"
+
+if [ ! -d "$DIR" ]; then
+    mkdir -p "$DIR"
+fi
+
+if [ -f "$LOG_FILE" ]; then
+    mv "$LOG_FILE" "$LOG_FILE".bak
+fi
+# Reset the log file at the start
+> "$LOG_FILE"
+
+export LD_PRELOAD=
+
+# Log messages with timestamps
+log() {
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> "$LOG_FILE"
+}
+
+# Log errors
+log_error() {
+    log "ERROR: $1"
+}
+
+# Log informational messages
+log_info() {
+    log "INFO: $1"
+}
+
+
+update_n_relaunch() {
+    log_info "Update and Restart requested"
+
+    local tmp_script=$(mktemp --tmpdir=/tmp "$(basename "$SELF")-XXXXXX.sh")
+    log_info "Move: $SELF -> $tmp_script"
+    if ! mv "$SELF" "$tmp_script"; then
+        log_error "Failed to move: $SELF -> $tmp_script"
+    fi
+
+    local app_path="$HOME/.local/share/flatpak/app/$APP_ID"
+    local app_fallback_path=$(flatpak info --user --show-location "$APP_ID" | tr -d '\n')
+
+    local launcher
+    if [ -d "$app_path" ]; then
+        launcher="$app_path/current/active/files/bin/NVIDIA GeForce NOW"
+    else
+        launcher="$app_fallback_path/../../../current/active/files/bin/NVIDIA GeForce NOW"
+    fi
+
+    if ! cp "$launcher" "$SELF"; then
+        log_error "FATAL: Failed to update: $launcher"
+    else
+        log_info "Launcher Updated to $launcher"
+    fi
+
+    log_info "Restarting App"
+    exec "$SELF"
+}
+
+
+# Launch App
+log_info "Running GeForceNOW..."
+flatpak run "$APP_ID" --no-relaunch
+r_code=$? 
+log_info "GeForceNOW launcher exited, status code: $r_code"
+
+if [ $r_code -eq 10 ]; then
+    update_n_relaunch
+    r_code=$?
+fi
+
+
+exit $r_code

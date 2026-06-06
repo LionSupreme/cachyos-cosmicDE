@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=NVIDIA GeForce NOW
+GenericName=NVIDIA GeForce NOW
+Exec="/home/x/.local/share/applications/NVIDIA GeForce NOW"
+Icon=com.nvidia.geforcenow
+Type=Application
+Categories=Network;Game;
