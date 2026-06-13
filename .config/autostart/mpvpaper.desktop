@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=mpvpaper-wallpapers
+Exec=/home/x/.local/bin/wallpaper.sh
+X-GNOME-Autostart-enabled=true

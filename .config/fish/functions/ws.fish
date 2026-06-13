@@ -1,4 +1,5 @@
 function ws
-    pkill mpvpaper
-    bash ~/.config/autostart/mpvpaper.sh
+    pkill -x mpvpaper 2>/dev/null
+    bash /home/x/.local/bin/wallpaper.sh &
+    echo "Wallpapers restarted"
 end
