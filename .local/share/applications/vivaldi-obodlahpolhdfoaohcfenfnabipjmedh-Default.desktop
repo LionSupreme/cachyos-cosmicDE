@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=DeepSeek
+Exec=/opt/vivaldi-snapshot/vivaldi-snapshot --profile-directory=Default --app-id=obodlahpolhdfoaohcfenfnabipjmedh
+Icon=vivaldi-obodlahpolhdfoaohcfenfnabipjmedh-Default
+StartupWMClass=crx_obodlahpolhdfoaohcfenfnabipjmedh

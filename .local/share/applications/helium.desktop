@@ -110,7 +110,7 @@ MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xht
 Categories=Network;WebBrowser;
 StartupNotify=true
 Actions=new-window;new-private-window;
-X-AppImage-Version=0.12.5.1
+X-AppImage-Version=0.13.3.1
 X-AppImage-Name=Helium
 
 [Desktop Action new-window]

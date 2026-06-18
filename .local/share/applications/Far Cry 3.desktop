@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Far Cry® 3
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/220240
+Icon=steam_icon_220240
+Terminal=false
+Type=Application
+Categories=Game;

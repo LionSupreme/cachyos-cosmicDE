@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=GeForce NOW
+Exec=/opt/vivaldi-snapshot/vivaldi-snapshot --profile-directory=Default --app-id=egmafekfmcnknbdlbfbhafbllplmjlhn
+Icon=vivaldi-egmafekfmcnknbdlbfbhafbllplmjlhn-Default
+StartupWMClass=crx_egmafekfmcnknbdlbfbhafbllplmjlhn

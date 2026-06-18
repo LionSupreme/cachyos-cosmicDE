@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Rocksmith® 2014 Edition - Remastered
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/221680
+Icon=steam_icon_221680
+Terminal=false
+Type=Application
+Categories=Game;

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Dying Light
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/239140
+Icon=steam_icon_239140
+Terminal=false
+Type=Application
+Categories=Game;

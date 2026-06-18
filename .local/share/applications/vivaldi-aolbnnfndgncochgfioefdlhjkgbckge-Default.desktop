@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Kimi
+Exec=/opt/vivaldi-snapshot/vivaldi-snapshot --profile-directory=Default --app-id=aolbnnfndgncochgfioefdlhjkgbckge
+Icon=vivaldi-aolbnnfndgncochgfioefdlhjkgbckge-Default
+StartupWMClass=crx_aolbnnfndgncochgfioefdlhjkgbckge

@@ -1,8 +1,8 @@
 {
-    "dac9ff788b044d59981c0fdf48d5b9d4a7b5a0a8053623d66ca3e289dfa5fdf6": (
+    "ae58665823ddb4e28d11c551354ae95599ff12c01df9bd946207d397aa0b82ad": (
         usage: (
             chart_visible: false,
-            value_visible: false,
+            value_visible: true,
             label_visible: true,
             icon_visible: false,
             chart: Ring,
@@ -163,7 +163,7 @@
         ),
         vram: (
             chart_visible: false,
-            value_visible: true,
+            value_visible: false,
             label_visible: false,
             icon_visible: true,
             chart: Ring,
@@ -488,10 +488,10 @@
         pause_on_battery: true,
         stack_values: true,
     ),
-    "ae58665823ddb4e28d11c551354ae95599ff12c01df9bd946207d397aa0b82ad": (
+    "dac9ff788b044d59981c0fdf48d5b9d4a7b5a0a8053623d66ca3e289dfa5fdf6": (
         usage: (
             chart_visible: false,
-            value_visible: true,
+            value_visible: false,
             label_visible: true,
             icon_visible: false,
             chart: Ring,
@@ -652,7 +652,7 @@
         ),
         vram: (
             chart_visible: false,
-            value_visible: false,
+            value_visible: true,
             label_visible: false,
             icon_visible: true,
             chart: Ring,

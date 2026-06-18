@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=ChatGPT
+Exec=/opt/vivaldi-snapshot/vivaldi-snapshot --profile-directory=Default --app-id=cadlkienfkclaiaibeoongdcgmdikeeg
+Icon=vivaldi-cadlkienfkclaiaibeoongdcgmdikeeg-Default
+StartupWMClass=crx_cadlkienfkclaiaibeoongdcgmdikeeg

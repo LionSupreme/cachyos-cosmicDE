@@ -1,33 +1,18 @@
 [
     (
         output: (
-            name: "DP-1",
+            name: "DP-4",
             edid: Some((
-                manufacturer: ('O', 'F', 'I'),
-                product: 45859,
-                serial: Some(539099939),
-                manufacture_week: 1,
-                manufacture_year: 2011,
-                model_year: None,
-            )),
-        ),
-        tiling_enabled: true,
-        id: Some("11b2dd0"),
-    ),
-    (
-        output: (
-            name: "eDP-2",
-            edid: Some((
-                manufacturer: ('B', 'O', 'E'),
-                product: 3017,
-                serial: None,
-                manufacture_week: 48,
+                manufacturer: ('S', 'A', 'M'),
+                product: 29233,
+                serial: Some(1536),
+                manufacture_week: 8,
                 manufacture_year: 2022,
                 model_year: None,
             )),
         ),
         tiling_enabled: true,
-        id: Some("11f67d2"),
+        id: Some("10cb8a3"),
     ),
     (
         output: (
@@ -46,17 +31,17 @@
     ),
     (
         output: (
-            name: "DP-4",
+            name: "DP-1",
             edid: Some((
-                manufacturer: ('S', 'A', 'M'),
-                product: 29233,
-                serial: Some(1536),
-                manufacture_week: 8,
-                manufacture_year: 2022,
+                manufacturer: ('O', 'F', 'I'),
+                product: 45859,
+                serial: Some(539099939),
+                manufacture_week: 1,
+                manufacture_year: 2011,
                 model_year: None,
             )),
         ),
         tiling_enabled: true,
-        id: Some("10cb8a3"),
+        id: Some("11b2dd0"),
     ),
 ]

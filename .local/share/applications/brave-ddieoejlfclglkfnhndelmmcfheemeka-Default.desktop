@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=PokéRogue
+Exec=/opt/brave.com/brave-origin-nightly/brave-origin-nightly --profile-directory=Default --app-id=ddieoejlfclglkfnhndelmmcfheemeka
+Icon=brave-ddieoejlfclglkfnhndelmmcfheemeka-Default
+StartupWMClass=crx_ddieoejlfclglkfnhndelmmcfheemeka

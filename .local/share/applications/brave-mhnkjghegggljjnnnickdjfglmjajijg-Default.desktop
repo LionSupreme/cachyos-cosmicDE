@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=FMHY - freemediaheckyeah
+Exec=/opt/brave.com/brave-origin-nightly/brave-origin-nightly --profile-directory=Default --app-id=mhnkjghegggljjnnnickdjfglmjajijg
+Icon=brave-mhnkjghegggljjnnnickdjfglmjajijg-Default
+StartupWMClass=crx_mhnkjghegggljjnnnickdjfglmjajijg
